@@ -31,5 +31,17 @@ namespace stringcalculator
             // Assert
             Assert.AreEqual(expectedResult, result);
         }
+        [Test]
+        public void ReturnSumGivenTwoIntegers()
+        {
+            // Arrange
+            var calculator = new Calculator();
+
+            // Act
+            var result = calculator.Add("1,2");
+
+            // Assert
+            Assert.AreEqual(3, result);
+        }
     }
 }
