@@ -17,5 +17,17 @@ namespace stringcalculator
             // Assert
             Assert.AreEqual(0, result);
         }
+        [Test]
+        public void ReturnOneGivenNumeralOne()
+        {
+            // Arrange
+            var calculator = new Calculator();
+
+            // Act
+            var result = calculator.Add("1");
+
+            // Assert
+            Assert.AreEqual(1, result);
+        }
     }
 }
