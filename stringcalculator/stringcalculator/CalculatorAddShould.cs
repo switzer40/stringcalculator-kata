@@ -29,5 +29,17 @@ namespace stringcalculator
             // Assert
             Assert.AreEqual(1, result);
         }
+        [Test]
+        public void ReturnTwoGivenNumeralTwo()
+        {
+            // Arrange
+            var calculator = new Calculator();
+
+            // Act
+            var result = calculator.Add("2");
+
+            // Assert
+            Assert.AreEqual(2, result);
+        }
     }
 }
