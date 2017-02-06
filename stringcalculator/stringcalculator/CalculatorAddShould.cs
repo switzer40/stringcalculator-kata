@@ -18,28 +18,18 @@ namespace stringcalculator
             Assert.AreEqual(0, result);
         }
         [Test]
-        public void ReturnOneGivenNumeralOne()
+        [TestCase("1", 1)]
+        [TestCase("2", 2)]
+        public void ReturnIntegerGivenSingleInteger(string input, int expectedResult)
         {
             // Arrange
             var calculator = new Calculator();
 
             // Act
-            var result = calculator.Add("1");
+            var result = calculator.Add(input);
 
             // Assert
-            Assert.AreEqual(1, result);
-        }
-        [Test]
-        public void ReturnTwoGivenNumeralTwo()
-        {
-            // Arrange
-            var calculator = new Calculator();
-
-            // Act
-            var result = calculator.Add("2");
-
-            // Assert
-            Assert.AreEqual(2, result);
+            Assert.AreEqual(expectedResult, result);
         }
     }
 }
