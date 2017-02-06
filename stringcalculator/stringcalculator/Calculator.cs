@@ -1,21 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace stringcalculator
+﻿namespace stringcalculator
 {
     public class Calculator
     {
-        public int Add(string v)
+        public int Add(string numbers)
         {
-            int result = 0;
-            if (v == "")
-            {
-                result = 0;
-            }
-            return  result;
+            return 0;
         }
     }
 }
